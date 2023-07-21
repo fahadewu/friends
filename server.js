@@ -2,8 +2,6 @@ const express = require('express')
 
 const app = express()
 
-const homeRoute = require('./routes/homeRoute')
-
 
 //app.use('/', homeRoute)
 
