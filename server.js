@@ -2,10 +2,11 @@ const express = require('express')
 
 const app = express()
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-    }
-)
+const homeRoute = require('./routes/homeRoute')
+
+
+app.use('/', homeRoute)
+
 
 app.get('/api', (req, res) => {
     res.send('Hello World from API!')
