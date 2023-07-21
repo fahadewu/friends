@@ -5,7 +5,7 @@ const app = express()
 const homeRoute = require('./routes/homeRoute')
 
 
-app.use('/', homeRoute)
+//app.use('/', homeRoute)
 
 
 app.get('/api', (req, res) => {
